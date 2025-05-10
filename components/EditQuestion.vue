@@ -23,8 +23,6 @@
   </template>
   
   <script setup>
-  import { ref, watch } from 'vue'
-  import { useStore } from '~/stores/questions'
   
   const props = defineProps({
     question: { type: Object, required: true },

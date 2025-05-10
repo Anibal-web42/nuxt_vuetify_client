@@ -24,11 +24,6 @@
 </template>
 
 <script setup>
-import { onMounted, computed } from 'vue'
-import { useStore } from '~/stores/questions'
-import Test from '~/components/test.vue'
-import EditQuestion from '~/components/EditQuestion.vue'
-
 const store = useStore()
 
 const questions = computed(() => store.questions)

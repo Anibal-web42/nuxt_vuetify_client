@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 
-export const useStore = defineStore('questions', {
+export const useStoreQuestion = defineStore('questions', {
   state: () => ({
     questions: [], // Lista de preguntas
     currentQuestion: null, // Pregunta actualmente seleccionada
