@@ -30,4 +30,7 @@ export const useStoreQuestion = defineStore('questions', {
       }
     },
   },
+  persist: {
+    storage: process.client ? localStorage : undefined // Solo usa localStorage en el cliente
+  }
 })

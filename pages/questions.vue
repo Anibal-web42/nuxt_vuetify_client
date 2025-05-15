@@ -24,15 +24,15 @@
 </template>
 
 <script setup>
-const store = useStore()
+const storeQuestion = useStoreQuestion()
 
-const questions = computed(() => store.questions)
-const currentQuestion = computed(() => store.currentQuestion)
+const questions = computed(() => storeQuestion.questions)
+const currentQuestion = computed(() => storeQuestion.currentQuestion)
 
 const handleSelectQuestion = (question) => {
-  store.setCurrentQuestion(question)
+  storeQuestion.setCurrentQuestion(question)
 }
 
 onMounted(() => {
-  store.fetchQuestions() })
+  storeQuestion.fetchQuestions() })
 </script>

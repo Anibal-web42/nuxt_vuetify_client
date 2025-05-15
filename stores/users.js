@@ -33,5 +33,8 @@ export const useUsersStore = defineStore('users', {
       })
       this.users = this.users.filter((u) => u.id !== id)
     }
+  },
+  persist: {
+    storage: process.client ? localStorage : undefined // Solo usa localStorage en el cliente
   }
 })
