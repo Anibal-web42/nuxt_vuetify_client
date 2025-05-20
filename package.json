@@ -35,6 +35,6 @@
     "vuetify": "^3.8.4"
   },
   "overrides": {
-    "vue": "latest"
+    "vue": "^3.5.13"
   }
 }
